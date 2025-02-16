@@ -115,11 +115,51 @@ class MainController extends BaseController
 
     processJob = async (job: Job) => {
         try {
-            await new Promise(resolve => setTimeout(resolve, 10000));
+            await new Promise(resolve => setTimeout(resolve, Number(process.env.MOCK_PROCESSING_TIME)));
             const { text, cacheKey } = job.data;
             console.log('Processing job:', job.id, 'with text:', text);
-            
+
+            /**
+             * Omitted as I do not have credits for the API
+             */
+           /* const messages = [
+                {
+                    role: 'system',
+                    content: `You are a text improvement assistant. Analyze the following text for grammar,
+                     style, and clarity issues. Return a JSON response with the following structure:
+                     {
+                         "original": "original text",
+                         "improved": "improved text",
+                         "changes": [
+                             {
+                                 "type": "grammar|style|clarity",
+                                 "original": "original part",
+                                 "improved": "improved part",
+                                 "explanation": "why this change was made"
+                             }
+                         ]
+                     }`
+                },
+                {
+                    role: 'user',
+                    content: text
+                }
+            ];
+
+            const response = await anthropic.messages.create({
+                model: 'claude-3-sonnet-20240229',
+                max_tokens: 1024,
+                messages,
+                temperature: 0
+            });
+
+            const result = JSON.parse(response.content[0].text);
+            */
+
+            /** Mocking the result */
             const improvedText = this.generateImprovedText(text);
+
+
             const result = {
                 original: text,
                 improved: improvedText,

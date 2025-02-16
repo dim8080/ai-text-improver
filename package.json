@@ -27,9 +27,9 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.16.0",
-    "@bull-board/api": "^6.7.7",
-    "@bull-board/express": "^6.7.7",
-    "@bull-board/ui": "^6.7.7",
+    "@bull-board/express": "^5.10.2",
+    "@bull-board/api": "^5.10.2",
+    "@bull-board/ui": "^5.10.2",
     "@types/bull": "^4.10.0",
     "@types/express-rate-limit": "^6.0.2",
     "bull": "^4.12.2",
