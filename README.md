@@ -32,7 +32,7 @@ It utilizes Redis queues for asynchronous processing and features a scalable arc
 ```bash
 git clone git@github.com:dim8080/ai-text-improver.git
 
-cd ai-text-improve
+cd ai-text-improver
 ```
 
 2. Install dependencies:
