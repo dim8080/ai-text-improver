@@ -189,11 +189,12 @@ docker-compose -f docker-compose.dev.yml up
 
 ## 🚧 Future Improvements
 
-- Support for multiple LLM providers
+- ~~Support for multiple LLM providers~~
 - Response caching
 - Streaming responses
 - Advanced error handling and retries
 - Webhook notifications
+- Frontend Application and Mobile Application ( React / React Native )
 
 
 
