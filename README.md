@@ -30,9 +30,9 @@ It utilizes Redis queues for asynchronous processing and features a scalable arc
 
 1. Clone the repository:
 ```bash
-git clone git@github.com:dim8080/assignment-ai.git
+git clone git@github.com:dim8080/ai-text-improver.git
 
-cd assignment-ai
+cd ai-text-improve
 ```
 
 2. Install dependencies:
